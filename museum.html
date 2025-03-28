@@ -13,8 +13,8 @@
     </style>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Museo Arti Visive</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +50,9 @@
                     <p>Un viaggio attraverso l'arte, il tempo e l'emozione</p>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="container-fluid ms-2">
-                    <div class="col-9">
+            <div class="container-fluid">
+                  <div class="row mt-3 gx-3">
+                    <div class="col-12 col-sm-9">
                         <h3>Mostre in corso</h3>
                         <div class="d-flex gap-3">
                             <div class="card mine-width">
@@ -71,10 +71,76 @@
                                   <p class="card-text">Dal 15 Marzo al 30 Giugno</p>
                                 </div>
                               </div>
-                        </div>
+                            </div>
+                            <h2 class="mt-4 mb-4">Collezioni permanenti</h2>
+                            <!-- card -->
+                            <div class="card">
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Arte Rinascimentale</li>
+                                <li class="list-group-item">Arte Moderna</li>
+                                <li class="list-group-item">Scultura Italiana</li>
+                              </ul>
+                            </div>
+                            <h2 class="mt-4 mb-4">infromazioni per la visita</h2>
+                            <!-- accordion -->
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Orari di apertura
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Dal martedì alla domenica, 10:00 - 18:00. 
+                                  </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accessibilità
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
-                    <div class="col-3">
-                        
+                    <div class="col-3 d-none d-sm-block">
+                      <h5>Eventi in arrivo</h5>
+                      <div class="card mt-3 mb-3">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Notte al Museo - 6 aprile</li>
+                          <li class="list-group-item">
+                            <p class="mb-0">Visite guidate gratuite - Ogni</p> 
+                            <span>domenica</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <h4 class="mt-3">Mappa del museo</h4>
+                      <img class="img-fluid" src="https://placehold.co/200x150"/>
+                      <div class="card mt-3 bg-info-subtle">
+                        <div class="card-body">
+                          <p class="card-text mb-0 text-primary-emphasis">Ingresso gratuito ogni prima</p>
+                          <span class="card-text text-primary-emphasis">domenica del mese</span>
+                        </div>
+                      </div>
                     </div>
                 </div>
 
